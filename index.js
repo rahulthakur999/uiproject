@@ -5,6 +5,8 @@ var data3 = "<h1>Edited by Majoj</h1>";
 
 let newvar ="<p>New line by manoj in dev branch/p>";
 
+//<p>this fior dev</p>
+
 for(text in data1){
     console.log(text);
 }
