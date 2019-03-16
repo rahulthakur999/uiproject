@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABOUT PAGE</title>
+</head>
+<body>
+<a style="float:right;" href="javascript:window.history.back()">BACK</a>
+<h1>Loops in JavaScript</h1>
+
+ <h3>for in loop</h3>
+
+ <p id="string1">Hi this is for in loop.</p>
+
+ <div id="output1">
+
+ </div>
+
+ <script>
+ let string=document.getElementById('string1');
+ string = string.innerText;
+
+ if (string!=""){
+     obj =  document.getElementById('output1');
+    // obj.innerHTML="";
+    var ul = document.createElement('UL');
+    ul.setAttribute('id','ul1');
+    obj.appendChild(ul);
+ }
+
+ for(s of string){
+     console.log(s);
+    var li = document.createElement('LI');
+    var text = document.createTextNode(s);
+    li.appendChild(text);
+
+    var getul = document.getElementById('ul1');
+     
+      getul.appendChild(li);
+
+    }
+
+ </script>
+    
+</body>
+</html>
